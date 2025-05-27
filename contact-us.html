@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Iron Axe Guitars - Custom Guitars for Metalheads." />
+  <title>Contact Us | Iron Axe Guitars</title>
+
+  <!-- Metal Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mission-vision.html">Mission & Vision</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact-us.html" class="active">Contact Us</a></li>
+        <li><a href="news-blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="web-designer-profile.html">Web Designer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact-us">
+      <h2>Get in Touch</h2>
+      <p>Want to forge your own metal axe? Drop us a line and let’s bring your custom guitar to life!</p>
+
+      <form action="submit_form.php" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="James Hetfield" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Let’s build a double-neck demon…" required></textarea>
+
+        <button type="submit">Send It</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Iron Axe Guitars | Designed by Darrel Guiam</p>
+  </footer>
+</body>
+</html>
