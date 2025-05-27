@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iron Axe Guitars - Custom Guitars for Metalheads.">
+    <title>About Us | Iron Axe Guitars</title>
+
+    <!-- Google Fonts for Metal Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Your style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="mission-vision.html">Mission & Vision</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="news-blog.html">Blog</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="web-designer-profile.html">Web Designer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-us">
+            <h2>Who We Are</h2>
+            <p>Born from distortion, forged in fire — <strong>Iron Axe Guitars</strong> is more than a guitar shop. We are a tribe of tone-chasers, shred-heads, and luthier rebels who believe every axe should roar with personality and purpose.</p>
+
+            <p>Our workshop combines old-school craftsmanship with brutal innovation. Each guitar is handcrafted, tested under high-gain conditions, and built to melt faces on stage or in the studio.</p>
+        </section>
+
+        <section class="faq">
+            <h3>Our Story</h3>
+            <p>It all started in a cramped garage with solder burns, splinters, and way too many riffs. We wanted gear that didn’t just sound heavy — it felt heavy. So we built it ourselves. Word spread, and <em>Iron Axe</em> was born.</p>
+        </section>
+
+        <section class="faq">
+            <h3>Meet the Axe Masters</h3>
+            <ul>
+                <li><strong>Jax “The Forge” Rivera</strong> – Lead Luthier & Tone Wizard</li>
+                <li><strong>Rae “Chainsaw” Myles</strong> – Custom Finishes & Wild Aesthetics</li>
+                <li><strong>Vince “Thrasher” Lee</strong> – Setup Guru & Pickup Whisperer</li>
+            </ul>
+        </section>
+
+        <section id="carousel">
+            <h3>In the Shop</h3>
+            <div class="carousel-container">
+                <div class="carousel-slide fade">
+                    <img src="g1.jpg" alt="Custom guitar on workbench">
+                </div>
+                <div class="carousel-slide fade">
+                    <img src="g2.jpg" alt="Polishing a neck in the workshop">
+                </div>
+                <div class="carousel-slide fade">
+                    <img src="g3.jpg" alt="Luthier testing guitar tones">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Iron Axe Guitars | Designed by Darrel Guiam</p>
+    </footer>
+
+    <!-- Carousel Script -->
+    <script>
+        let slideIndex = 0;
+        const showSlides = () => {
+            let slides = document.getElementsByClassName("carousel-slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 4000); // Change every 4 seconds
+        };
+        showSlides();
+    </script>
+</body>
+</html>

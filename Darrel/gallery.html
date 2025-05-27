@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Iron Axe Guitars - Custom Guitars for Metalheads."/>
+  <title>Gallery | Iron Axe Guitars</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mission-vision.html">Mission & Vision</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="news-blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="web-designer-profile.html">Web Designer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <h2>The Axe Arsenal</h2>
+      <p>Unleash the fury. Every guitar here is handcrafted for maximum mayhem — no mass production, just pure metal soul.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="g1.jpg" alt="Custom Guitar 1" onclick="openModal(this)">
+          <p class="caption">The Inferno V</p>
+        </div>
+        <div class="gallery-item">
+          <img src="g2.jpg" alt="Custom Guitar 2" onclick="openModal(this)">
+          <p class="caption">Midnight Howler</p>
+        </div>
+        <div class="gallery-item">
+          <img src="g3.jpg" alt="Custom Guitar 3" onclick="openModal(this)">
+          <p class="caption">Stormbreaker</p>
+        </div>
+        <div class="gallery-item">
+          <img src="g4.jpg" alt="Custom Guitar 4" onclick="openModal(this)">
+          <p class="caption">Blood Ritual</p>
+        </div>
+        <div class="gallery-item">
+          <img src="g5.jpg" alt="Custom Guitar 5" onclick="openModal(this)">
+          <p class="caption">Abyss Explorer</p>
+        </div>
+        <div class="gallery-item">
+          <img src="g6.jpg" alt="Custom Guitar 6" onclick="openModal(this)">
+          <p class="caption">Hellbound</p>
+        </div>
+        <div class="gallery-item">
+          <img src="g7.jpg" alt="Custom Guitar 7" onclick="openModal(this)">
+          <p class="caption">Iron Claw</p>
+        </div>
+        <div class="gallery-item">
+          <img src="g8.jpg" alt="Custom Guitar 8" onclick="openModal(this)">
+          <p class="caption">Wraithcaster</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Iron Axe Guitars | Designed by Darrel Guiam</p>
+  </footer>
+
+  <!-- Modal for Image Zoom -->
+  <div id="imgModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+
+  <script>
+    function openModal(img) {
+      document.getElementById('imgModal').style.display = 'block';
+      document.getElementById('modalImage').src = img.src;
+      document.getElementById('modalCaption').innerText = img.alt;
+    }
+
+    function closeModal() {
+      document.getElementById('imgModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
